@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta name="description" content="My personal email templates" />
+    <title>Email templates</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/2ca165613c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="top-nav">
+      <div class="nav-container">
+        <button onclick="changeDevicePrev('pc')">
+          <i class="fa-solid fa-desktop"></i>
+        </button>
+        <button onclick="changeDevicePrev('tablet')">
+          <i class="fa-solid fa-tablet"></i>
+        </button>
+        <button onclick="changeDevicePrev('mobile')">
+          <i class="fa-solid fa-mobile"></i>
+        </button>
+      </div>
+    </div>
+    <div class="container">
+      <button class="arrow-btn" onclick="changeEmailPreview('left')"><</button>
+      <div class="content">
+        <iframe
+          id="emailPrev"
+          src="templates/email_template_1.html"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <button class="arrow-btn" onclick="changeEmailPreview('right')">></button>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
